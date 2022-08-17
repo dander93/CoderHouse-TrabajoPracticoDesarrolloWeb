@@ -205,6 +205,22 @@ a:hover {
     display: inline-block;
 }
 
+.logo-container:hover .logo-image {
+    animation: logo-animacion 2s infinite;
+
+}
+
+@keyframes logo-animacion {
+    0% {
+        filter: invert(80%) sepia(88%) saturate(930%) hue-rotate(326deg) brightness(99%) contrast(104%);
+    }
+
+    100% {
+        transform: rotateX(360deg);
+        filter: invert(80%) sepia(88%);
+    }
+}
+
 .logo-text {
     display: inline-block;
 }
